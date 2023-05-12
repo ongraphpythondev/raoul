@@ -20,7 +20,9 @@ if button:
 
         the output will be like below example
 
-        Example Category:["billing inquiry","technical issue","product inquiry"],Request:["what client wants now?"]
+        Example Category:["billing inquiry","technical issue","product inquiry"]
+        if the issue come more then one issue give all the issue
+        you can also give your own category if its is not 
         '''
     print(openai_api)
 
