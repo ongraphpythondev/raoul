@@ -9,15 +9,11 @@ openai_api=st.secrets["OPEN_AI_API"]
 
 
 st.title("Issue Classifier")
-text=st.text_input("Text")
+text=st.text_area("Text")
+button=st.button("submit",use_container_width=True)
 
-
-if text:
-
-
-
-    # Prompt Template
-
+if button:
+# Prompt Template
     template='''{email}
         
         In the above email find the catagory categorizes the customer query into predefined categories such as "billing inquiry," "technical issue," "product inquiry," etc., based on its content and keywords.
