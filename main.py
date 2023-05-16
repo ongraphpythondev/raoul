@@ -6,23 +6,28 @@ from langchain.chains import LLMChain
 import streamlit as st
 load_dotenv()
 openai_api=st.secrets["OPEN_AI_API"]
+# openai_api=os.getenv("Open_ai_api")
 
 
 st.title("Issue Classifier")
-text=st.text_area("Text")
+text=st.text_area("Text",height=300)
 button=st.button("submit",use_container_width=True)
 
 if button:
 # Prompt Template
     template='''{email}
         
-        In the above email find the catagory categorizes the customer query into predefined categories such as "billing inquiry," "technical issue," "product inquiry," etc., based on its content and keywords.
+        Your are an email classifier with experience of 20 years.In the above email find the catagory categorizes the customer query into predefined categories such as "billing inquiry," "technical issue," "product inquiry," etc., based on its content and keywords.
 
         the output will be like below example
 
         Example Category:["billing inquiry","technical issue","product inquiry"]
-        if the issue come more then one issue give all the issue
-        you can also give your own category if its is not 
+        if it contain more then one category return all categories
+        you can also give your own category if its is not contain in it.
+        
+        example sentence :If have bought a SIM card from your company what is the cost to me and what services you will provide me?
+        Category: billing inquiry,product inquiry
+        output does not contain Answer
         '''
     print(openai_api)
 
