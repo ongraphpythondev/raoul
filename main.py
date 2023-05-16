@@ -17,13 +17,13 @@ if button:
 # Prompt Template
     template='''{email}
         
-        Your are an email classifier with experience of 20 years.In the above email find the catagory categorizes the customer query into predefined categories such as "billing inquiry," "technical issue," "product inquiry," etc., based on its content and keywords.
+        Your are an email classifier with experience of 20 years.In the above email find the catagory categorizes the customer query, based on its content and keywords.
 
         the output will be like below example
 
-        Example Category:["billing","technical issue","product inquiry","gas meter","personal account information","Technical issue internet","contract change internet"]
+        Example Category:["billing","technical issue","product inquiry","callback",","customer dissatisfaction","gas meter","personal account information","Technical issue internet","contract change internet"]
         if it contain more then one category return all categories
-        you can also give your own category if its is not contain in it.
+        you can also give your own category.
         
         
         output does not contain Answer
