@@ -21,7 +21,7 @@ if button:
 
         the output will be like below example
 
-        Example Category:["billing inquiry","technical issue","product inquiry"]
+        Example Category:["billing","technical issue","product inquiry","gas meter","personal account information","Technical issue internet","contract change internet"]
         if it contain more then one category return all categories
         you can also give your own category if its is not contain in it.
         
