@@ -25,8 +25,7 @@ if button:
         if it contain more then one category return all categories
         you can also give your own category if its is not contain in it.
         
-        example sentence :If have bought a SIM card from your company what is the cost to me and what services you will provide me?
-        Category: billing inquiry,product inquiry
+        
         output does not contain Answer
         '''
     print(openai_api)
