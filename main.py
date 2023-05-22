@@ -5,8 +5,8 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import streamlit as st
 load_dotenv()
-# openai_api=st.secrets["openai_api_key"]
-openai_api=os.getenv("openai_api_key")
+openai_api=st.secrets["openai_api_key"]
+# openai_api=os.getenv("openai_api_key")
 
 
 st.title("Issue Classifier")
