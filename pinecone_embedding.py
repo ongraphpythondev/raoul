@@ -11,11 +11,12 @@ load_dotenv()
 st.title("Question Answer PDF")
 # openai_api_key=os.getenv('openai_api_key')
 # Pinecone_ENV=os.getenv("PINECONE_ENV")
+# Pinecone_API=os.getenv("PINECONE_API_KEY")
+
 Pinecone_ENV=st.secrets["Pinecone_ENV"]
 openai_api_key=st.secrets["openai_api_key"]
 Pinecone_API=st.secrets["PINECONE_API_KEY"]
 
-# Pinecone_API=os.getenv("PINECONE_API_KEY")
 # loader = DirectoryLoader('./data/', glob="**/*.pdf", show_progress=True)
 # documents = loader.load()
 # text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
